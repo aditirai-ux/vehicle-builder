@@ -136,51 +136,65 @@ class Cli {
 
   // method to create a truck
   createTruck(): void {
-    inquirer
-      .prompt([
-        {
-          type: 'input',
-          name: 'color',
-          message: 'Enter Color',
-        },
-        {
-          type: 'input',
-          name: 'make',
-          message: 'Enter Make',
-        },
-        {
-          type: 'input',
-          name: 'model',
-          message: 'Enter Model',
-        },
-        {
-          type: 'input',
-          name: 'year',
-          message: 'Enter Year',
-        },
-        {
-          type: 'input',
-          name: 'weight',
-          message: 'Enter Weight',
-        },
-        {
-          type: 'input',
-          name: 'topSpeed',
-          message: 'Enter Top Speed',
-        },
-        {
-          type: 'input',
-          name: 'towingCapacity',
-          message: 'Enter Towing Capacity',
-        },
-      ])
-      .then((answers) => {
-        // TODO: Use the answers object to pass the required properties to the Truck constructor
-        // TODO: push the truck to the vehicles array
-        // TODO: set the selectedVehicleVin to the vin of the truck
-        // TODO: perform actions on the truck
-      });
-  }
+      inquirer
+        .prompt([
+          {
+            type: 'input',
+            name: 'color',
+            message: 'Enter Color',
+          },
+          {
+            type: 'input',
+            name: 'make',
+            message: 'Enter Make',
+          },
+          {
+            type: 'input',
+            name: 'model',
+            message: 'Enter Model',
+          },
+          {
+            type: 'input',
+            name: 'year',
+            message: 'Enter Year',
+          },
+          {
+            type: 'input',
+            name: 'weight',
+            message: 'Enter Weight',
+          },
+          {
+            type: 'input',
+            name: 'topSpeed',
+            message: 'Enter Top Speed',
+          },
+          {
+            type: 'input',
+            name: 'towingCapacity',
+            message: 'Enter Towing Capacity',
+          },
+        ])
+        .then((answers) => {
+          // TODO: Use the answers object to pass the required properties to the Truck constructor
+          const truck = new Truck(
+            Cli.generateVin(),
+            answers.color,
+            answers.make,
+            answers.model,
+            parseInt(answers.year),
+            parseInt(answers.weight),
+            parseInt(answers.topSpeed),
+            parseInt(answers.towingCapacity),
+            [],
+          )
+          // TODO: push the truck to the vehicles array
+          this.vehicles.push(truck);
+          // TODO: set the selectedVehicleVin to the vin of the truck
+          this.selectedVehicleVin = truck.vin;
+          // TODO: perform actions on the truck
+          this.performActions();
+        });
+    }
 
   // method to create a motorbike
   createMotorbike(): void {
