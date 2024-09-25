@@ -2,7 +2,7 @@
 
 ## Description
 
-This application is a vehicle builder that uses the npm inquirer package to take user input and allow user interaction with data. The data taken in (and displayed) is of different vehicle attributes such as make, model, year of manufacture, weight, wheel dimensions & brand, and towing capacity, for Cars, Trucks and Motorbikes.
+This application uses the npm inquirer package to take user input on different vehicle attributes such as make, model, year of manufacture, weight, wheel dimensions & brand, and towing capacity, for three vehicle classes - Cars, Trucks and Motorbikes. It also allows users to interact with the data and perform various pre-defined actions.
 
 ## Table of Contents
 
