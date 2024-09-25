@@ -29,7 +29,7 @@ This app is versatile and can have multiple applications:
 
 ## Credits
 
-This project was created by Aditi Rai for the CU Coding Bootcamp. The headings and structure of readme file has been taken from: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide. Reference for license badge and links is: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba.
+This project was created by Aditi Rai for the CU Coding Bootcamp. Reference for license badge and links is: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba.
 
 ## Contributing
 
