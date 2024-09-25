@@ -10,6 +10,7 @@ This application is a vehicle builder that takes user input on different vehicle
 - [Usage](#usage)
 - [Credits](#credits)
 - [Contributing](#contributing)
+- [Video Walkthrough](#video)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
@@ -33,6 +34,10 @@ This project was created by Aditi Rai for the CU Coding Bootcamp. The headings a
 ## Contributing
 
 While this is an open-source project, it is original work. Please be mindful when contributing and follow the code of conduct outlined in the Contributor Covenant (https://www.contributor-covenant.org/)
+
+## Video
+
+A detailed explanation of the app's functionality is shown in the following video walkthrough: https://drive.google.com/file/d/10W5VbHtFWtrsQE35O4haMJenwx9xjC7F/view?usp=sharing
 
 ## Tests
 
