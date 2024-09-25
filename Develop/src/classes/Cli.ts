@@ -297,7 +297,7 @@ class Cli {
           console.log('The truck cannot tow itself. Please select another action.');
           this.performActions();
         } else {
-          console.log(`${answers.vehicleToTow} is being towed right now.`);
+          console.log(`The vehicle is being towed right now.`);
           this.performActions();
         }
         
